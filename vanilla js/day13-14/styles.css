@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+@import "src/reset.css";
+
+@import "src/today.css";
+@import "src/user.css";
+@import "src/todo.css";
+@import "src/bg.css";
+@import "src/weather.css";
+
+:root {
+    --white: #ecf0f1;
+}
+
+* {
+    color: var(--white);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+}

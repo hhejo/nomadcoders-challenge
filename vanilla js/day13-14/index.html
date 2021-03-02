@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" />
+    <title>HZ MOMENTUM</title>
+</head>
+<body>
+    <!-- today -->
+    <div class="today js-today">
+        <span class="today__date js-date"></span>
+        <span class="today__time js-time"></span>
+    </div>
+    
+    <!-- user -->
+    <div class="user js-user">
+        <form class="user__name-form js-userNameForm hiding">
+            <input type="text" placeholder="What is your name?" />
+        </form>
+        <h4 class="user__greeting js-userGreeting hiding"></h4>
+    </div>
+    
+    <!-- todo -->
+    <div class="todo js-todo">
+        <form class="todo__todo-form js-todoForm">
+            <input type="text" placeholder="Write a to do" />
+        </form>
+        <ul class="todo__todo-list js-todoList">
+        </ul>
+    </div>
+    
+    <!-- weather -->
+    <span class="weather js-weather"></span>
+
+    <script src="src/today.js"></script>
+    <script src="src/user.js"></script>
+    <script src="src/todo.js"></script>
+    <script src="src/bg.js"></script>
+    <script src="src/weather.js"></script>
+</body>
+</html>

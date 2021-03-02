@@ -1,0 +1,21 @@
+.today {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.today__date {
+    font-size: 30px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.today__time {
+    font-size: 90px;
+    letter-spacing: 2px;
+    word-spacing: -5px;
+}
