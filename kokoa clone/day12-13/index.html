@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css">
+        <link href="style.css" rel="stylesheet" />
+        <title>repl.it</title>
+    </head>
+    <body>
+        <main class="main">
+            <section class="section">
+                <header class="header">
+                    <span class="header__icon"><i class="fas fa-arrow-left"></i></span>
+                    <span class="header__icon"><i class="fas fa-search"></i></span>
+                </header>
+                <div class="song-selected">
+                    <img class="song-selected__cover" src="coldplay.jpg"/>
+                    <span class="song-selected__author">Coldplay</span>
+                    <span class="song-selected__genre">Rock/Metal, Pop, Electronica</span>
+                    <div class="song-selected__btns">
+                        <span class="song-selected__btn">Shuffle</span>
+                        <div class="song-selected__btn">
+                            <i class="fas fa-heart fa-lg"></i>
+                            <span>342 471</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <ul class="song-list">
+                        <li class="song-list__column">
+                            <div class="song-list__song-cover">
+                                <img src="yellow.jpg"/>
+                            </div>
+                            <div class="song-list__song-info">
+                                <span class="song-list__author">Coldplay</span>
+                                <span class="song-list__title">Yellow</span>
+                            </div>
+                            <span><i class="fas fa-ellipsis-v"></i></span>
+                        </li>
+                        <li class="song-list__column">
+                            <div class="song-list__song-cover">
+                                <img src="viva-la-vida.jpg"/>
+                                <div class="song-list__now-playing">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="song-list__song-info">
+                                <span class="song-list__author">Coldplay</span>
+                                <span class="song-list__title">Viva La Vida</span>
+                            </div>
+                            <span><i class="fas fa-ellipsis-v"></i></span>
+                        </li>
+                        <li class="song-list__column">
+                            <div class="song-list__song-cover">
+                                <img src="fix-you.jpg"/>
+                            </div>
+                            <div class="song-list__song-info">
+                                <span class="song-list__author">Coldplay</span>
+                                <span class="song-list__title">Fix You</span>
+                            </div>
+                            <span><i class="fas fa-ellipsis-v"></i></span>
+                        </li>
+                        <li class="song-list__column">
+                            <div class="song-list__song-cover">
+                                <img src="everglow.jpg"/>
+                            </div>
+                            <div class="song-list__song-info">
+                                <span class="song-list__author">Coldplay</span>
+                                <span class="song-list__title">Everglow</span>
+                            </div>
+                            <span><i class="fas fa-ellipsis-v"></i></span>
+                        </li>
+                    </ul>
+                    <div class="song-play-bar">
+                        <div class="song-play-bar__info">
+                            <span class="song-play-bar__author">Coldplay</span>
+                            <span class="song-play-bar__title">Viva la Vida</span>
+                        </div>
+                        <div class="song-play-bar__btns">
+                            <span class="song-play-bar__btn"><i class="fas fa-chevron-left"></i></span>
+                            <span class="song-play-bar__btn"><i class="fas fa-pause fa-lg"></i></span>
+                            <span class="song-play-bar__btn"><i class="fas fa-chevron-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section">
+                <header class="header">
+                    <span class="header__icon"><i class="fas fa-arrow-left"></i></span>
+                    <span class="header__icon"><i class="fas fa-ellipsis-v"></i></span>
+                </header>
+                <div class="playing-main">
+                    <div class="playing-main__info">
+                        <img class="playing-main__cover" src="viva-la-vida.jpg" />
+                        <span class="playing-main__title">Viva La Vida</span>
+                        <span class="playing-main__author">Coldplay</span>
+                    </div>
+                </div>
+                <div class="playing-control">
+                    <div class="playing-control__status">
+                        <div class="playing-control__time">
+                            <span>2:36</span>
+                            <span>4:01</span>
+                        </div>
+                        <div class="playing-control__range">
+                            <div class="playing-control__prev"></div>
+                            <div class="playing-control__now"></div>
+                            <div class="playing-control__next"></div>
+                        </div>
+                    </div>
+                    <div class="playing-control__btns">
+                        <i class="fas fa-redo"></i>
+                        <i class="fas fa-chevron-left fa-lg"></i>
+                        <div><i class="fas fa-play fa-lg"></i></div>
+                        <i class="fas fa-chevron-right fa-lg"></i>
+                        <i class="fas fa-random"></i>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

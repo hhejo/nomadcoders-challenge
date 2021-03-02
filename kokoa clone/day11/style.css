@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow: #FFCE33;
+    --gray: #ebebeb;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ==================== wrapper ==================== */
+.wrapper {
+    width: 400px;
+    background-color: white;
+    position: relative;
+}
+
+
+/* ==================== header ==================== */
+header {
+    background-color: var(--yellow);
+    padding: 50px 15px 15px 15px;
+    width: 100%;
+    height: 150px;
+}
+
+.header__bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.header__bar > i,
+.header__bar > span {
+    width: 33%;
+}
+
+.header__bar span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.header__bar i:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* ==================== search ==================== */
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 340px;
+    padding: 20px 40px;
+    border-radius: 30px;
+    background-color: white;
+    position: absolute;
+    top: 120px;
+    right: 30px;
+    box-shadow: 0 1em 1em -0.7em var(--gray);
+}
+
+.search__text {
+    font-weight: 600;
+}
+
+.search__text,
+.search > i {
+    color: var(--gray);
+}
+
+
+/* ==================== main ==================== */
+main {
+    /*
+    background-color: lightgray;
+    */
+    padding: 70px 15px 15px 15px;
+    width: 100%;
+    height: 600px;
+}
+
+
+/* ==================== book-row ==================== */
+.book-row {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+
+/* ==================== book ==================== */
+.book {
+    display:flex;
+    margin: 30px 0 40px 0;
+}
+
+.book__cover {
+    width: 130px;
+    height: 185px;
+    background-color: #50B2A3;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.book__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px
+}
+
+.book__data__title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.book__data__author {
+    color: var(--gray);
+    font-size: 14px;
+}
+
+.book__data__stars i {
+    color: #FFCE33;
+    font-size: 12px;
+}
+
+.book__data__stars i:last-child {
+    color: var(--gray);
+}
+
+.book__data__genre {
+    margin: 15px 0;
+}
+
+.book__data__genre span {
+    background-color: var(--gray);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.book__data__genre span:first-child {
+    margin-right: 5px;
+}
+
+.book__data__btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book__data__btns > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.book__data__btns span {
+    font-size: 12px;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 7px;
+}
+
+
+/* ==================== books ==================== */
+.books {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 30px 0;
+}
+
+.book-small {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.book-small__cover {
+    background-color: var(--yellow);
+    width: 85px;
+    height: 120px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.books .book-small:first-child .book-small__cover {
+    background-color: #ED856E;
+}
+
+.books .book-small:nth-child(2) .book-small__cover {
+    background-color: #C77645;
+}
+
+.books .book-small:nth-child(3) .book-small__cover {
+    background-color: #FBF1CD;
+}
+
+.books .book-small:last-child .book-small__cover {
+    background-color: #477577;
+}
+
+.book-small__stars > i {
+    font-size: 10px;
+    color: var(--yellow);
+}
+
+.book-small__stars > i:last-child {
+    color: var(--gray);
+}
+
+
+/* ==================== book ==================== */
+.popular {
+    display:flex;
+    padding: 30px 0;
+}
+
+.popular__cover {
+    width: 120px;
+    height: 150px;
+    background-color: #574737;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.popular__data {
+    width: 180px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.popular__data__title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.popular__data__text {
+    font-size: 14px;
+    color: var(--gray);
+    width: 200px;
+    line-height: 1.3;
+}
