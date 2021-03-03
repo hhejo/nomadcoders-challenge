@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://andybrewer.github.io/mvp/mvp.css" rel="stylesheet"></link>
+</head>
+
+<body>
+    {% autoescape false %}
+    <header>
+        <h1>Mizp News</h1>
+        <div>
+            Order by:
+            {% if news_type == "http://hn.algolia.com/api/v1/search?tags=story" %}
+                <strong>Popular</strong>
+                |
+                <a href="/?order_by=new">New</a>
+            {% else %}
+                <a href="/?order_by=popular">Popular</a>
+                |
+                <strong>New</strong>
+            {% endif %}
+        </div>
+    </header>
+    <main>
+        {% for news in news_list %}
+            <div>
+                <div>
+                    <a href={{news['object_id']}}>
+                        <h3>{{news['title']}}</h3>
+                    </a>
+                    (
+                    <a href={{news['link']}} target="_blank">{{news['link']}}</a>
+                    )
+                </div>
+                <div>
+                    {{news['points']}} points | By: {{news['author']}} | {{news['num_comments']}} comments
+                </div>
+            </div>
+            <hr>
+        {% endfor %}
+    </main>
+    {% endautoescape %}
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://andybrewer.github.io/mvp/mvp.css" rel="stylesheet"></link>
+</head>
+
+<body>
+    {% autoescape false %}
+    <header>
+        <h1>{{news['title']}}</h1>
+        <div>
+            {{news['points']}} points
+            |
+            By {{news['author']}}
+            |
+            <a href="#" target="_blank">{{news['link']}}</a>
+        </div>
+    </header>
+    <main>
+        {% for comment in comment_list %}
+            <div>
+                {% if comment['author'] is not none %}
+                    <strong>{{comment['author']}}:</strong>
+                    <p></p>
+                    <p>{{comment['comment_text']}}</p>
+                    <p></p>
+                {% else %}
+                    [deleted]
+                {% endif %}
+            </div>
+            <hr>
+        {% endfor %}
+    </main>
+    {% endautoescape %}
+</body>
+
+</html>
